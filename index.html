@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>বাংলাদেশ আহলেহাদীছ যুবসংঘ – সাতক্ষীরা জেলা</title>
+<link href="https://fonts.maateen.me/solaiman-lipi/font.css" rel="stylesheet">
+<style>
+  :root{
+    --g:#0b6b3a; --g2:#0f8a4c; --gl:#e8f5ee; --ink:#1b2a22; --mut:#5d6f65;
+    --line:#d5e2da; --bg:#f3f7f4; --err:#c0392b; --gold:#c9a227;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:'SolaimanLipi','Noto Sans Bengali',system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
+  header{background:linear-gradient(135deg,var(--g),var(--g2));color:#fff;text-align:center;padding:28px 16px 40px;border-bottom:4px solid var(--gold)}
+  .logo{width:96px;height:96px;border-radius:50%;display:block;margin:0 auto 10px;border:3px solid #fff;background:#fff;box-shadow:0 4px 14px rgba(0,0,0,.25)}
+  header .bis{font-size:14px;opacity:.85;margin-bottom:6px}
+  header h1{margin:0;font-size:24px;font-weight:700}
+  header h2{margin:6px 0 0;font-size:17px;font-weight:500;opacity:.95}
+  header p{margin:12px auto 0;max-width:520px;font-size:14px;opacity:.9}
+  main{max-width:640px;margin:-22px auto 40px;padding:0 16px}
+  .card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px;margin-bottom:14px;box-shadow:0 2px 10px rgba(11,107,58,.06)}
+  .card h3{margin:0 0 12px;font-size:16px;color:var(--g);border-bottom:2px solid var(--gl);padding-bottom:6px}
+  label{display:block;font-weight:600;font-size:14px;margin:12px 0 4px}
+  label .r{color:var(--err)}
+  input,select,textarea{width:100%;font:inherit;padding:11px 12px;border:1.5px solid var(--line);border-radius:10px;background:#fff;color:var(--ink)}
+  input:focus,select:focus,textarea:focus{outline:none;border-color:var(--g2);box-shadow:0 0 0 3px rgba(15,138,76,.15)}
+  .row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  @media(max-width:520px){.row{grid-template-columns:1fr}}
+  .opts{display:grid;gap:8px;margin-top:6px}
+  .opt{display:flex;align-items:center;gap:10px;border:1.5px solid var(--line);border-radius:10px;padding:10px 12px;cursor:pointer;font-weight:500}
+  .opt input{width:auto;margin:0;accent-color:var(--g)}
+  .opt:has(input:checked){border-color:var(--g2);background:var(--gl)}
+  .hint{font-size:12px;color:var(--mut);margin-top:3px}
+  .invalid{border-color:var(--err)!important}
+  .msg{color:var(--err);font-size:13px;margin-top:10px;display:none}
+  button{width:100%;font:inherit;font-weight:700;font-size:16px;padding:14px;border:0;border-radius:12px;background:var(--g);color:#fff;cursor:pointer}
+  button:disabled{opacity:.6}
+  .done{display:none;text-align:center;padding:36px 18px}
+  .done .tick{width:64px;height:64px;border-radius:50%;background:var(--gl);color:var(--g);font-size:34px;line-height:64px;margin:0 auto 12px}
+  .done a{color:var(--g);font-weight:600;cursor:pointer;text-decoration:underline}
+  .cb{position:relative}
+  .list{display:none;position:absolute;left:0;right:0;top:100%;z-index:20;background:#fff;border:1.5px solid var(--g2);border-radius:10px;margin-top:4px;max-height:260px;overflow:auto;box-shadow:0 8px 24px rgba(0,0,0,.15)}
+  .list div{padding:10px 12px;cursor:pointer;border-bottom:1px solid var(--gl)}
+  .list div:last-child{border:0}
+  .list div.on,.list div:hover{background:var(--gl)}
+  .list .none{color:var(--mut);cursor:default;font-size:13px}
+  footer{text-align:center;color:var(--mut);font-size:12px;padding-bottom:30px}
+</style>
+</head>
+<body>
+<header>
+  <img class="logo" alt="বাংলাদেশ আহলেহাদীছ যুবসংঘ" src="data:image/jpeg;base64,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">
+  <div class="bis">بسم الله الرحمن الرحيم</div>
+  <h1>বাংলাদেশ আহলেহাদীছ যুবসংঘ</h1>
+  <h2>সাতক্ষীরা জেলা</h2>
+  <p>শিক্ষার্থী তথ্য সংগ্রহ ফর্ম – অনুগ্রহ করে সঠিক তথ্য দিয়ে পূরণ করুন।</p>
+</header>
+
+<main>
+<form id="f" novalidate>
+  <div class="card">
+    <h3>ব্যক্তিগত তথ্য</h3>
+    <label>শিক্ষার্থীর নাম <span class="r">*</span></label>
+    <input name="name" required autocomplete="name">
+    <label>পিতার নাম <span class="r">*</span></label>
+    <input name="father" required>
+    <div class="row">
+      <div><label>ব্লাড গ্রুপ</label>
+        <select name="blood"><option value="">নির্বাচন করুন</option>
+          <option>A+</option><option>A-</option><option>B+</option><option>B-</option>
+          <option>AB+</option><option>AB-</option><option>O+</option><option>O-</option>
+          <option>জানি না</option></select></div>
+      <div><label>জেলা</label><input value="সাতক্ষীরা" disabled></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>ঠিকানা ও যোগাযোগ</h3>
+    <label>উপজেলা <span class="r">*</span></label>
+    <div class="cb"><input id="upazila" placeholder="অক্ষর লিখুন, যেমন: কা…" autocomplete="off" required><div class="list" id="upList"></div></div>
+    <div class="hint">টাইপ করুন বা তালিকা থেকে বেছে নিন</div>
+    <div class="row">
+      <div><label>ইউনিয়ন</label><input name="union"></div>
+      <div><label>গ্রাম <span class="r">*</span></label><input name="village" required></div>
+    </div>
+    <div class="row">
+      <div><label>ফোন নম্বর <span class="r">*</span></label>
+        <input name="phone" type="tel" inputmode="tel" placeholder="01XXXXXXXXX" required></div>
+      <div><label>সেকেন্ডারি ফোন নম্বর</label>
+        <input name="phone2" type="tel" inputmode="tel" placeholder="01XXXXXXXXX"></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>শিক্ষা সংক্রান্ত তথ্য</h3>
+    <label>অধ্যয়নরত প্রতিষ্ঠান <span class="r">*</span></label>
+    <div class="cb"><input id="inst" placeholder="আগে উপজেলা নির্বাচন করুন" autocomplete="off" disabled><div class="list" id="instList"></div></div>
+    <div class="hint">স্কুল / কলেজ / মাদরাসার নামের অক্ষর লিখুন। তালিকায় না থাকলে পুরো নাম লিখে দিন।</div>
+    <div class="row">
+      <div><label>শিক্ষাবর্ষ</label><input name="session" placeholder="যেমন: ২০২৬"></div>
+      <div><label>শ্রেণি <span class="r">*</span></label>
+        <select name="level" required><option value="">নির্বাচন করুন</option>
+          <option>৬ষ্ঠ</option><option>৭ম</option><option>৮ম</option><option>৯ম</option><option>১০ম</option>
+          <option>একাদশ</option><option>দ্বাদশ</option>
+          <option>ডিগ্রি (পাস)</option><option>অনার্স</option><option>মাস্টার্স</option>
+          <option>মাদরাসা</option><option>অন্যান্য</option></select></div>
+    </div>
+    <div class="row">
+      <div><label>বর্ষ</label>
+        <select name="year"><option value="">নির্বাচন করুন</option><option>প্রযোজ্য নয়</option>
+          <option>১ম বর্ষ</option><option>২য় বর্ষ</option><option>৩য় বর্ষ</option><option>৪র্থ বর্ষ</option></select></div>
+      <div><label>বিভাগ</label>
+        <select name="dept"><option value="">নির্বাচন করুন</option><option>প্রযোজ্য নয়</option>
+          <option>বিজ্ঞান</option><option>মানবিক</option><option>ব্যবসায় শিক্ষা</option><option>অন্যান্য</option></select></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>সাংগঠনিক তথ্য</h3>
+    <label>সাংগঠনিক মান</label>
+    <div class="opts">
+      <label class="opt"><input type="radio" name="rank" value="সমর্থক"> সমর্থক</label>
+      <label class="opt"><input type="radio" name="rank" value="প্রাথমিক সদস্য"> প্রাথমিক সদস্য</label>
+      <label class="opt"><input type="radio" name="rank" value="অনুমোদিত কর্মী"> অনুমোদিত কর্মী</label>
+      <label class="opt"><input type="radio" name="rank" value="কেন্দ্রীয় কাউন্সিল সদস্য"> কেন্দ্রীয় কাউন্সিল সদস্য</label>
+    </div>
+    <label>বাংলাদেশ আহলেহাদীছ যুবসংঘ সম্পর্কে মন্তব্য</label>
+    <textarea name="comment" rows="3"></textarea>
+  </div>
+
+  <div class="msg" id="err"></div>
+  <button id="btn" type="submit">জমা দিন</button>
+</form>
+
+<div class="card done" id="done">
+  <div class="tick">✓</div>
+  <h3 style="border:0">জাযাকাল্লাহু খাইরান!</h3>
+  <p>আপনার তথ্য সফলভাবে জমা হয়েছে।</p>
+  <p><a onclick="location.reload()">আরেকটি ফর্ম পূরণ করুন</a></p>
+</div>
+</main>
+<footer>© বাংলাদেশ আহলেহাদীছ যুবসংঘ, সাতক্ষীরা জেলা</footer>
+
+<script>
+let SCHOOLS = {};
+const API = 'https://script.google.com/macros/s/AKfycbzB1zxwYdJczu7yIXhHWKejfeI8a1-8M9Db3HzsaoullbYCKisOMKAIxuAP1ubgxHui/exec';
+let UPAZILAS = ['সাতক্ষীরা সদর','কলারোয়া','তালা','দেবহাটা','আশাশুনি','কালিগঞ্জ','শ্যামনগর'];
+function loadData(n) {
+  fetch(API + '?action=data', { cache: 'no-store' }).then(r => r.json()).then(d => {
+    if (d && d.schools) SCHOOLS = d.schools;
+    if (d && d.upazilas) UPAZILAS = d.upazilas;
+  }).catch(() => { if (n < 6) setTimeout(() => loadData(n + 1), 1500 * (n + 1)); });
+}
+loadData(0);
+const $ = id => document.getElementById(id);
+const up = $('upazila'), inst = $('inst');
+
+/* টাইপ করলে সাজেশন দেখানো ড্রপডাউন */
+function combo(input, box, getItems, onPick) {
+  let idx = -1, shown = [];
+  const norm = s => String(s).toLowerCase().replace(/\s+/g, ' ').trim();
+  function render() {
+    const q = norm(input.value);
+    const all = getItems();
+    const starts = all.filter(x => norm(x).startsWith(q));
+    const has = all.filter(x => !norm(x).startsWith(q) && norm(x).includes(q));
+    shown = (q ? starts.concat(has) : all).slice(0, 60);
+    idx = -1;
+    box.innerHTML = '';
+    if (!shown.length) {
+      const n = document.createElement('div'); n.className = 'none';
+      n.textContent = all.length ? 'মিলছে না – পুরো নাম লিখে দিন' : 'এই উপজেলার তালিকা খালি – পুরো নাম লিখে দিন';
+      box.appendChild(n);
+    }
+    shown.forEach(x => {
+      const d = document.createElement('div'); d.textContent = x;
+      d.addEventListener('mousedown', ev => { ev.preventDefault(); pick(x); });
+      box.appendChild(d);
+    });
+    box.style.display = 'block';
+  }
+  function pick(x) { input.value = x; box.style.display = 'none'; onPick && onPick(x); }
+  function mark() { [...box.children].forEach((c, i) => c.classList.toggle('on', i === idx)); const c = box.children[idx]; c && c.scrollIntoView({block:'nearest'}); }
+  input.addEventListener('input', render);
+  input.addEventListener('focus', render);
+  input.addEventListener('blur', () => { box.style.display = 'none'; });
+  input.addEventListener('keydown', e => {
+    if (box.style.display !== 'block') return;
+    if (e.key === 'ArrowDown') { idx = Math.min(idx + 1, shown.length - 1); mark(); e.preventDefault(); }
+    else if (e.key === 'ArrowUp') { idx = Math.max(idx - 1, 0); mark(); e.preventDefault(); }
+    else if (e.key === 'Enter' && idx >= 0) { pick(shown[idx]); e.preventDefault(); }
+  });
+}
+
+function setInst(enabled) {
+  inst.disabled = !enabled; inst.value = '';
+  inst.placeholder = enabled ? 'প্রতিষ্ঠানের নামের অক্ষর লিখুন…' : 'আগে উপজেলা নির্বাচন করুন';
+}
+combo(up, $('upList'), () => UPAZILAS, () => setInst(true));
+up.addEventListener('input', () => { if (!UPAZILAS.includes(up.value)) setInst(false); });
+up.addEventListener('blur', () => { if (!UPAZILAS.includes(up.value)) { up.value = ''; setInst(false); } });
+combo(inst, $('instList'), () => SCHOOLS[up.value] || []);
+
+$('f').addEventListener('submit', e => {
+  e.preventDefault();
+  const f = e.target, err = $('err');
+  err.style.display = 'none';
+  f.querySelectorAll('.invalid').forEach(x => x.classList.remove('invalid'));
+
+  const d = Object.fromEntries(new FormData(f).entries());
+  d.upazila = up.value;
+  d.institution = inst.value.trim();
+  d.rank = (f.querySelector('input[name=rank]:checked') || {}).value || '';
+
+  let bad = [];
+  ['name','father','village','upazila','level'].forEach(k => { if (!String(d[k]||'').trim()) bad.push(f.elements[k]); });
+  if (!d.institution) bad.push(inst);
+  const en = s => String(s||'').replace(/[০-৯]/g, c => '০১২৩৪৫৬৭৮৯'.indexOf(c)).replace(/[\s-]/g,'');
+  const re = /^01[3-9]\d{8}$/;
+  if (!re.test(en(d.phone))) bad.push(f.elements.phone);
+  if (d.phone2 && !re.test(en(d.phone2))) bad.push(f.elements.phone2);
+
+  if (bad.length) {
+    bad.forEach(x => x.classList.add('invalid'));
+    bad[0].scrollIntoView({behavior:'smooth', block:'center'});
+    err.textContent = 'লাল চিহ্নিত ঘরগুলো সঠিকভাবে পূরণ করুন (ফোন নম্বর ১১ ডিজিটের হতে হবে)।';
+    err.style.display = 'block';
+    return;
+  }
+
+  const btn = $('btn'); btn.disabled = true; btn.textContent = 'জমা হচ্ছে…';
+  fetch(API, { method: 'POST', headers: { 'Content-Type': 'text/plain;charset=utf-8' }, body: JSON.stringify(d) })
+    .then(r => r.json())
+    .then(res => {
+      if (!res.ok) throw new Error(res.error || 'সমস্যা হয়েছে');
+      f.style.display = 'none'; $('done').style.display = 'block'; window.scrollTo(0, 0);
+    })
+    .catch(ex => {
+      btn.disabled = false; btn.textContent = 'জমা দিন';
+      err.textContent = (ex && ex.message) || 'সমস্যা হয়েছে, আবার চেষ্টা করুন।';
+      err.style.display = 'block';
+    });
+});
+</script>
+</body>
+</html>
